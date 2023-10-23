@@ -192,6 +192,7 @@ LIBS += -L/usr/local/Cellar/ffmpeg/6.0_1/lib \
         -lswscale \
         -lswresample
 ```
+![设置文件路径](ttps://github.com/FreakLee/Audio_Video_Learning/blob/main/03_Resource/Image/01.15.png)
 
 测试是否集成成功，在main.cpp添加几行代码，尝试打印 libavcodec.a库文件的版本信息
 
