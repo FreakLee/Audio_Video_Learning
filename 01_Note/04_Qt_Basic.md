@@ -75,6 +75,7 @@ g++ -o qt_console_app qt_console_app.o -F /usr/local/Cellar/qt/6.5.2/lib -framew
 ```
 此时生成了qt_console_app可执行文件
 ![2.2](https://github.com/FreakLee/Audio_Video_Learning/blob/main/03_Resource/Image/02.02.jpg)
+
 运行可执行文件：
 ``` sh
 ./qt_console_app
