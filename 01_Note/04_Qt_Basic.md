@@ -50,6 +50,7 @@ make
 ```
 
 此时编译成功本应该生成一个qt_console_app的可执行文件。结果生成了与.cpp同名的.o文件，即：qt_console_app.o，还生成了目录同名的02_QtConsoleApp.app应用程序。
+![2.1](https://github.com/FreakLee/Audio_Video_Learning/blob/main/03_Resource/Image/02.01.jpg)
 
 尝试去执行这个.o文件会报错，格式错误：
 ``` sh
@@ -72,18 +73,21 @@ qt_console_app.o: Mach-O 64-bit object x86_64
 ``` sh
 g++ -o qt_console_app qt_console_app.o -F /usr/local/Cellar/qt/6.5.2/lib -framework QtCore
 ```
-此时生成了qt_console_app可执行文件，运行可执行文件：
+此时生成了qt_console_app可执行文件
+![2.2](https://github.com/FreakLee/Audio_Video_Learning/blob/main/03_Resource/Image/02.02.jpg)
+运行可执行文件：
 ``` sh
 ./qt_console_app
 ```
-成功打印：Hello, world!
+控制台成功打印：Hello, world!
 
 查看文件信息，显然跟上面的qt_console_app.o不一样：
 ``` sh
 qt_console_app: Mach-O 64-bit executable x86_64
 ```
-
-事实上，上面make命令生成的02_QtConsoleApp.app，显示包内容，然后可以找到可执行文件。通过这个简单的Qt控制台程序，很容易联想到以前在终端编译、链接、执行C程序的过程。
+事实上，上面make命令生成的02_QtConsoleApp.app，显示包内容，然后可以找到可执行文件。
+![2.3](https://github.com/FreakLee/Audio_Video_Learning/blob/main/03_Resource/Image/02.03.jpg)
+通过这个简单的Qt控制台程序，很容易联想到以前在终端编译、链接、执行C程序的过程。
 
 
 
