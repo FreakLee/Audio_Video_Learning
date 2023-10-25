@@ -197,19 +197,24 @@ MainWindow::MainWindow(QWidget *parent)
 ### ui示例
 
 在ui中建立信号与槽的连接更加简单。这种方式跟iOS开发中的xib非常类似。点击mainwindow.ui，然后随便拖一个Push Button，右击选择“Go to slot”。
+
 ![2.4](https://github.com/FreakLee/Audio_Video_Learning/blob/main/03_Resource/Image/02.04.jpg)
 
 选择第一个，点击OK。
+
 ![2.5](https://github.com/FreakLee/Audio_Video_Learning/blob/main/03_Resource/Image/02.05.jpg)
 
 接着自动生成了槽函数的声明和实现。在实现函数里随意加点代码。
+
 ``` cpp
 void MainWindow::on_pushButton_clicked()
 {
     close();
 }
 ```
+
 根据生成的槽函数与Button名字的之间的特点，可以猜想它们之间可能有某种联系。带着这个猜想再拖一个Button，命名为：loginButton。
+
 ![2.6](https://github.com/FreakLee/Audio_Video_Learning/blob/main/03_Resource/Image/02.06.jpg)
 
 不在.ui文件中进行信号与槽的连接，而是仿照上面的方式分别在mainwindow.h添加槽函数声明：
