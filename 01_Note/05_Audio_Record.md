@@ -41,7 +41,7 @@ AVOutputFormat 是 FFmpeg 中表示输出媒体格式的结构体。每个输出
 
 使用 AVOutputFormat 结构体，你可以根据输出文件的格式选择合适的输出格式，或者根据需要注册自定义的输出格式。
 
-* AVFrame：
+* AVFrame
 
 AVFrame 是 FFmpeg 中表示音视频帧的结构体。它包含了音视频帧的原始数据和相关的信息，如时间戳、宽度、高度等。每个 AVFrame 对应一个音频或视频帧。
 
